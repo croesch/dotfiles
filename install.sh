@@ -3,8 +3,12 @@ function link_file {
     source="${PWD}/$1"
     target="${HOME}/${1/_/.}"
 
-    if [ -e "${target}" ] && [ ! -L "${target}" ]; then
-        mv $target $target.df.bak
+    if [ -e "${target}" ]; then
+        if [ -L "${target}" ]; then
+            unlink $target
+        else
+            mv $target $target.df.bak
+        fi
     fi
 
     ln -sf ${source} ${target}
