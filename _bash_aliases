@@ -1,0 +1,5 @@
+alias sapt='sudo apt-get'
+alias aptall='sapt update -y && sapt upgrade -y && sapt autoremove -y && sapt autoclean'
+alias topten='history | awk '\''{print $2}'\'' | awk '\''BEGIN {FS="|"}{print $1}'\'' | sort | uniq -c | sort -n | tail | sort -nr'
+alias dhmnt="sshfs it09066@login.informatik.ba-stuttgart.de:/home/blackhole.it01/it09066/ /media/dhbw-account/"
+alias dhumnt="fusermount -u /media/dhbw-account/"
