@@ -29,11 +29,6 @@ It's as simple as running:
 
 From this top-level directory.
 
-### Only install and build vim Files
-Because this bit is pretty portable
-
-    ./install.sh vim
-
 ### Restore old source Files
 To replace installed files with the originals:
 
