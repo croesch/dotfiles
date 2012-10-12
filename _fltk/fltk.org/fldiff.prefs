@@ -1,0 +1,15 @@
+; FLTK preferences file format 1.0
+; vendor: fltk.org
+; application: fldiff
+
+[.]
+
+window_width:1291
+window_height:734
+color:255
+selection_color:95
+showlinenum:1
+tabwidth:8
+textcolor:56
+textsize:14
+ignoreblanks:1
