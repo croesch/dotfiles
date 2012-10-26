@@ -81,3 +81,8 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+# enable environment settings
+if [ -f ~/.bash_env ]; then
+    . ~/.bash_env
+fi
