@@ -3,3 +3,5 @@ alias aptall='sapt update -y && sapt upgrade -y && sapt autoremove -y && sapt au
 alias topten='history | awk '\''{print $2}'\'' | awk '\''BEGIN {FS="|"}{print $1}'\'' | sort | uniq -c | sort -n | tail | sort -nr'
 alias dhmnt="sshfs it09066@login.informatik.ba-stuttgart.de:/home/blackhole.it01/it09066/ /media/dhbw-account/"
 alias dhumnt="fusermount -u /media/dhbw-account/"
+alias comp-jpg='find . -iname "*.jp*g" -type f -print0 | xargs -0 jpegoptim -t'
+alias comp-png='find . -iname "*.png" -type f -print0 | xargs -0 optipng'
