@@ -86,3 +86,24 @@ fi
 if [ -f ~/.bash_env ]; then
     . ~/.bash_env
 fi
+
+##############################
+#         functions          #
+##############################
+
+# remove extra information from jpg-files
+anonymise-jpg () {
+    case $# in
+        1)
+            $FUNCNAME "$1" "$1"
+            ;;
+        2)
+            convert "$1" +profile '*' "$2"
+            ;;
+        *)
+            echo "Usage:"
+            echo "  $FUNCNAME image"
+            echo "  $FUNCNAME image-file target-file"
+            ;;
+    esac
+}
