@@ -129,3 +129,26 @@ git-find () {
             ;;
     esac
 }
+
+unlink-hard-link () {
+    case $# in
+        1)
+            if [ -f "$1" ]; then
+                if [ -f "$1.$FUNCNAME" ]; then
+                    echo "ERROR: Backup file '$1.$FUNCNAME' exists"
+                    return 2
+                fi
+                mv "$1" "$1.$FUNCNAME"
+                cp "$1.$FUNCNAME" "$1"
+                rm "$1.$FUNCNAME"
+            else
+                echo "ERROR: File '$1' doesn't even exist.."
+                return 1
+            fi
+            ;;
+        *)
+            echo "Usage:"
+            echo "  $FUNCNAME file"
+            ;;
+    esac
+}
