@@ -140,7 +140,7 @@ unlink-hard-link () {
                 fi
                 mv "$1" "$1.$FUNCNAME"
                 cp "$1.$FUNCNAME" "$1"
-                rm "$1.$FUNCNAME"
+                rm -f "$1.$FUNCNAME"
             else
                 echo "ERROR: File '$1' doesn't even exist.."
                 return 1
