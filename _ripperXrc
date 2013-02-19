@@ -1,0 +1,54 @@
+//
+// ~/.ripperXrc
+// This is the resource file for ripperX.
+// If you edit this file with an editor, you must leave all
+// parameters in the order in which they appear.  Also note
+// that this file is overwritten each time ripperX is run.
+//
+// You can configure everything in the config menu within ripperX.
+//
+
+//-V 2.7.3
+
+General::WavRatio = 0.006000
+General::Mp3Ratio = 0.080000
+General::ShellForExecution = /bin/sh
+General::WavPath = ./
+General::Mp3Path = ./
+General::CDDBPath = ./.cddbslave
+General::WavFileNameFormat = track%
+General::Mp3FileNameFormat = track%
+General::PrependChar = _
+General::MakeMp3FromExistingWav = 0
+General::AskWhenFileExists = 1
+General::AutoAppendExtension = 1
+General::KeepWav = 0
+Ripper::Ripper = cdparanoia                
+Ripper::Plugin = ripperX_plugin-cdparanoia
+Encoder::Encoder = lame
+Encoder::Type = 2
+Encoder::Bitrate = 256
+Encoder::VarBitrate = 1
+Encoder::VBRQual = 4
+Encoder::Priority = 10
+Encoder::HighQual = 1
+Encoder::useCRC = 0
+Encoder::extraOptions = 
+Encoder::fullCommand = lame -b 256 --nohist -v -h  -V 4 
+Encoder::Plugin = ripperX_plugin-lame
+CdPlayer::Play_command = cdplay %
+CdPlayer::Stop_command = cdstop
+WavPlayer::Command = play %
+Mp3Player::Command = mpg123 %
+CDDBConfig::Server = freedb.freedb.org/~cddb/cddb.cgi
+CDDBConfig::Port = 80
+CDDBConfig::UseHttp = 1
+CDDBConfig::ProxyServer = 
+CDDBConfig::ProxyPort = 8080
+CDDBConfig::ConvertSpaces = 0
+CDDBConfig::MakeDirectories = 1
+CDDBConfig::CreateID3 = 1
+CDDBConfig::CreatePlaylist = 1
+CDDBConfig::AutoLookup = 0
+CDDBConfig::FormatString = %a - %s
+CDDBConfig::DirFormatString = %a - %v
