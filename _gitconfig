@@ -18,3 +18,5 @@
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
     ls = ls-files
+    ls-ignored-files = ls-files -ci --exclude-standard
+    apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0r git rm --cached
