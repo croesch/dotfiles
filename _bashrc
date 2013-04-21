@@ -36,10 +36,9 @@ esac
 # Load in the git branch prompt script.
 source ~/.git-prompt
 
-NORMAL='\e[0m'
-BLUE='\e[1;34m'
-GREEN='\e[1;32m'
-YELLOW='\e[1;33m'
+if [ -f ~/.bash_colors ]; then
+  . ~/.bash_colors
+fi
 
 PS1="${debian_chroot:+($debian_chroot)}\[$GREEN\]\u@\h\[$NORMAL\]:\[$BLUE\]\w\[$YELLOW\]\$(__git_ps1)\[$NORMAL\]\$ "
 unset color_prompt force_color_prompt
