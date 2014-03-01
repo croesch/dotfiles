@@ -1,3 +1,4 @@
+alias sapt='sudo apt-get'
 alias aptall='sapt update -y && sapt upgrade -y && sapt autoremove -y && sapt autoclean'
 alias topten='history | awk '\''{print $2}'\'' | awk '\''BEGIN {FS="|"}{print $1}'\'' | sort | uniq -c | sort -n | tail | sort -nr'
 alias comp-jpg='find . -iname "*.jp*g" -type f -print0 | xargs -0 jpegoptim -t'
