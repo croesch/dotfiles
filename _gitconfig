@@ -3,6 +3,7 @@
 	email = christianroesch@gmx.net
 [core]
 	excludesfile = ~/.gitignore_global
+  commentchar = $
 [color]
 	ui = true
 
@@ -20,3 +21,5 @@
     ls = ls-files
     ls-ignored-files = ls-files -ci --exclude-standard
     apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0r git rm --cached
+[push]
+	default = simple
