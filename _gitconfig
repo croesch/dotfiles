@@ -1,6 +1,8 @@
 [user]
-	name = croesch
-	email = christianroesch@gmx.net
+        name = croesch
+        email = christianroesch@gmx.net
+[input]
+        path = ~/.gitconfig_user
 [core]
 	excludesfile = ~/.gitignore_global
   commentchar = $
