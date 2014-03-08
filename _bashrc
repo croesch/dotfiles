@@ -87,3 +87,20 @@ fi
 if [ -f ~/.bash_env ]; then
     . ~/.bash_env
 fi
+
+function md() {
+  plain=`echo "${1}" | sed -e "s/\.markdown$//g"`
+  if [ -f "${plain}.markdown" ]
+    then
+      sed -i "s/ä/\&auml;/g" "${plain}.markdown"
+      sed -i "s/ö/\&ouml;/g" "${plain}.markdown"
+      sed -i "s/ü/\&uuml;/g" "${plain}.markdown"
+      sed -i "s/Ä/\&Auml;/g" "${plain}.markdown"
+      sed -i "s/Ö/\&Ouml;/g" "${plain}.markdown"
+      sed -i "s/Ü/\&Uuml;/g" "${plain}.markdown"
+      sed -i "s/ß/\&szlig;/g" "${plain}.markdown"
+      markdown "${plain}.markdown" > "${plain}.html"
+  else
+    echo "${plain}.markdown is not a regular file"
+  fi
+}
