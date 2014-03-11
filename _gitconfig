@@ -1,24 +1,24 @@
 [user]
-        name = croesch
-        email = christianroesch@gmx.net
+    name = croesch
+    email = christianroesch@gmx.net
 [input]
-        path = ~/.gitconfig_user
+    path = ~/.gitconfig_user
 [core]
-	excludesfile = ~/.gitignore_global
-        commentchar = $
-        editor = vim
-        packedGitLimit = 512m
-        packedGitWindowSize = 128m
+    excludesfile = ~/.gitignore_global
+    commentchar = $
+    editor = vim
+    packedGitLimit = 512m
+    packedGitWindowSize = 128m
 [pack]
-        windowMemory = 2g
-        packSizeLimit = 4g
-        threads = 4
-        deltaCacheSize = 1g
+    windowMemory = 2g
+    packSizeLimit = 4g
+    threads = 4
+    deltaCacheSize = 1g
 
 [color]
-	ui = true
+    ui = true
 [push]
-        default = simple
+    default = simple
 
 [alias]
     diverges = !bash -c 'diff -u <(git rev-list --first-parent "${1}") <(git rev-list --first-parent "${2:-HEAD}") | sed -ne \"s/^ //p\" | head -1' -
@@ -34,5 +34,3 @@
     ls = ls-files
     ls-ignored-files = ls-files -ci --exclude-standard
     apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0r git rm --cached
-[push]
-	default = simple
