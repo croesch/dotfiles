@@ -7,13 +7,8 @@
     excludesfile = ~/.gitignore_global
     commentchar = $
     editor = vim
-    packedGitLimit = 512m
-    packedGitWindowSize = 128m
 [pack]
-    windowMemory = 2g
-    packSizeLimit = 4g
     threads = 4
-    deltaCacheSize = 1g
 
 [color]
     ui = true
