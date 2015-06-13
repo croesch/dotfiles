@@ -4,6 +4,9 @@ alias topten='history | awk '\''{print $2}'\'' | awk '\''BEGIN {FS="|"}{print $1
 alias comp-jpg='find . -iname "*.jp*g" -type f -print0 | xargs -0 jpegoptim -t'
 alias comp-png='find . -iname "*.png" -type f -print0 | xargs -0 optipng'
 alias ll='ls -alF'
+alias df='df -h'
+alias di='df -hi'
+alias whatsmyip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 alias chromium-browser='chromium-browser --ssl-version-min=tls1'
 
