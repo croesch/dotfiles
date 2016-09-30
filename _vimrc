@@ -20,8 +20,6 @@ vnoremap > >gv
 " Enable undo in insert mode
 imap <c-z> <c-o>u
 
-set autoindent
-
 " If buffer modified, update any 'Last modified: ' in the first 20 lines.
 " 'Last modified: ' can have up to 15 characters before (they are retained).
 " Restores cursor and window position using save_cursor variable.
