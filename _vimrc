@@ -1,5 +1,10 @@
+execute pathogen#infect()
+
+let mapleader = " "
+
 " Enable line numbers
 set number
+set relativenumber
 
 " Indention without hard tabs
 set expandtab
