@@ -104,3 +104,15 @@ function md() {
     echo "${plain}.markdown is not a regular file"
   fi
 }
+
+function turn_right() {
+  in="${1}"
+  file="${in/%3gp/mp4}"
+  tmpFile="/tmp/$(basename "${file}")"
+  avconv -i "${in}" -vf "transpose=1" "${tmpFile}"
+  if [ $? == 0 ]
+  then
+    rm "${in}"
+    mv "${tmpFile}" "${file}"
+  fi
+}
