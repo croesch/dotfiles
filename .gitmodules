@@ -4,3 +4,6 @@
 [submodule "_vim/bundle/nerdtree"]
 	path = _vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+[submodule "_vim/bundle/pinnacle"]
+	path = _vim/bundle/pinnacle
+	url = https://github.com/wincent/pinnacle.git
