@@ -2,6 +2,9 @@ execute pathogen#infect()
 
 let mapleader = " "
 
+syntax on
+colorscheme candycode_modified
+
 set statusline="STATUS"
 
 " Enable line numbers
