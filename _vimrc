@@ -2,6 +2,8 @@ execute pathogen#infect()
 
 let mapleader = " "
 
+set statusline="STATUS"
+
 " Enable line numbers
 set number
 set relativenumber
