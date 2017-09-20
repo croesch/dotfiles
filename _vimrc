@@ -3,7 +3,7 @@ execute pathogen#infect()
 let mapleader = " "
 
 syntax on
-colorscheme candycode_modified
+colorscheme croesch
 
 set statusline="STATUS"
 
