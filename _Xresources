@@ -1,3 +1,4 @@
+URxvt.font: xft:Source Code Pro for Powerline:size=10:Regular:antialias=true
 *foreground: rgb:dc/dc/dc
 *background: rgb:05/05/05
 *color0: rgb:05/05/05
