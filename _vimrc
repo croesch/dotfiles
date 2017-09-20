@@ -11,6 +11,9 @@ set statusline="STATUS"
 set number
 set relativenumber
 
+" Enable wildmenu
+set wildmenu
+
 " Indention without hard tabs
 set expandtab
 set shiftwidth=2
