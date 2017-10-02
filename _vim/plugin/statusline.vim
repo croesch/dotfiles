@@ -1,5 +1,7 @@
 scriptencoding utf-8
 
+set statusline="STATUS"
+
 " cf the default statusline: %<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 if has('statusline')
   set statusline=%#LineNr#

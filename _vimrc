@@ -1,38 +1,5 @@
 execute pathogen#infect()
 
-let mapleader = " "
-
-syntax on
-colorscheme croesch
-
-set statusline="STATUS"
-
-" Enable line numbers
-set number
-set relativenumber
-
-" Enable wildmenu
-set wildmenu
-
-" Indention without hard tabs
-set expandtab
-set shiftwidth=2
-set softtabstop=2
-
-set showmatch           " Show matching brackets.
-set incsearch           " Incremental search
-set hlsearch            " highlight searched things
-
-" ******************************************************************
-" KEY MAPPINGS
-
-" pressing < or > will let you indent/unindent selected lines
-vnoremap < <gv
-vnoremap > >gv
-
-" Enable undo in insert mode
-imap <c-z> <c-o>u
-
 " If buffer modified, update any 'Last modified: ' in the first 20 lines.
 " 'Last modified: ' can have up to 15 characters before (they are retained).
 " Restores cursor and window position using save_cursor variable.
