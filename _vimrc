@@ -1,4 +1,4 @@
-execute pathogen#infect()
+execute pathogen#infect('bundle/{}', '~/.local.vim/{}')
 
 " If buffer modified, update any 'Last modified: ' in the first 20 lines.
 " 'Last modified: ' can have up to 15 characters before (they are retained).
