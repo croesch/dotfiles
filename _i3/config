@@ -180,7 +180,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # tools / programs
-bindsym $mod+n exec nautilus
+bindsym $mod+n exec ~/.i3-env/file-manager
 
 # audio
 mode "audio" {
