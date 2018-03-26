@@ -4,3 +4,4 @@ let mapleader = " "
 nnoremap <silent> <Leader>r :call mappings#cycle_numbering()<CR>
 
 nnoremap <Leader>q :quit<CR>
+nnoremap <Leader>w :w<CR>i
