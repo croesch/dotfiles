@@ -8,7 +8,7 @@ echo -n "Crafting .i3/config from base and .i3-env/config.."
 # sourcing variables
 . $HOME/.i3/config.base.variables
 
-if [ -f "$HOME/.i3/config.base.variables" ]
+if [ -f "$HOME/.i3-env/config.variables" ]
 then
   . $HOME/.i3-env/config.variables
 fi
