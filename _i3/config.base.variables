@@ -1,0 +1,5 @@
+#!/bin/sh
+
+I3_MODIFIER="Mod4"
+I3_FONT="pango:DejaVu Sans Mono 8"
+I3_DMENU_CMD="dmenu_run -fn 'DejaVu Sans Mono-8'"
