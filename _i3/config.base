@@ -22,7 +22,8 @@ floating_modifier $mod
 bindsym $mod+l exec "i3lock -d -i ~/.i3/lockscreen.png -p win -e"
 
 # take screenshots
-bindsym Print exec xfce4-screenshooter
+bindsym Print exec "maim | tee ~/Pictures/screenshot-$(date +%F-%H%M%S).png | xclip -selection clipboard -t image/png"
+bindsym Shift+Print exec "maim -s | tee ~/Pictures/screenshot-$(date +%F-%H%M%S).png | xclip -selection clipboard -t image/png"
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
