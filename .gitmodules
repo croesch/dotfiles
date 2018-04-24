@@ -7,3 +7,6 @@
 [submodule "_vim/bundle/pinnacle"]
 	path = _vim/bundle/pinnacle
 	url = https://github.com/wincent/pinnacle.git
+[submodule "_vim/bundle/ack"]
+	path = _vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
