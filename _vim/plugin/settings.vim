@@ -3,6 +3,9 @@ set laststatus=2                      " always show status line
 syntax on
 colorscheme croesch
 
+" load filetype specific plugins / indentations
+filetype plugin indent on
+
 " Enable line numbers
 set number
 set relativenumber
