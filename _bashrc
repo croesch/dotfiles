@@ -40,7 +40,11 @@ if [ -f ~/.bash_colors ]; then
   . ~/.bash_colors
 fi
 
-PS1="${debian_chroot:+($debian_chroot)}\[$GREEN\]\u@\h\[$NORMAL\]:\[$BLUE\]\w\[$YELLOW\]\$(__git_ps1)\[$NORMAL\]\$ "
+__host_color () {
+  printf $GREEN
+}
+
+PS1="${debian_chroot:+($debian_chroot)}\[\$(__host_color)\]\u@\h\[$NORMAL\]:\[$BLUE\]\w\[$YELLOW\]\$(__git_ps1)\[$NORMAL\]\$ "
 
 unset color_prompt force_color_prompt
 
