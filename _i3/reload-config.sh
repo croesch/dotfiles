@@ -22,4 +22,5 @@ $CAT_LOCATION "$HOME/.i3/config.base" "$HOME/.i3-env/config" 2>/dev/null >> "$I3
 
 echo "done."
 
+command -v i3-msg >/dev/null 2>&1 || { echo "i3 does not seem to be available."; exit; }
 i3-msg "reload"
