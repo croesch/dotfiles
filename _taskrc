@@ -31,3 +31,5 @@ data.location=~/.task
 
 uda.priority.values=H,M,,L
 urgency.uda.priority.L.coefficient=-1.1
+urgency.user.tag.easy.coefficient=1.0
+include ~/.taskrc.env
