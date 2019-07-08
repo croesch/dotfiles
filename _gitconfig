@@ -1,7 +1,7 @@
 [user]
     name = Christian Rösch
     email = christianroesch@gmx.net
-[input]
+[include]
     path = ~/.gitconfig_user
 [core]
     excludesfile = ~/.gitignore_global
