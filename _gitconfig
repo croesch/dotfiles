@@ -34,6 +34,9 @@
     ls-ignored-files = ls-files -ci --exclude-standard
     apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0r git rm --cached
     g = grep --break --heading --line-number
+    fix = "!f() { vim `git diff --name-only | uniq`; }; f"
 [grep]
 	extendRegexp = true
 	lineNumber = true
+[merge]
+    tool = vimdiff
