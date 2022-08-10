@@ -20,7 +20,7 @@ floating_modifier $mod
 for_window [window_type="notification"] floating enable, move container to output current
 
 # lock screen
-bindsym $mod+l exec "i3lock -d -i ~/.i3/lockscreen.png -p win -e"
+bindsym $mod+l exec "i3lock -i ~/.i3/lockscreen.png -p win -e -t -f"
 
 # take screenshots
 bindsym --release Print exec "$screenshooter_full | tee ~/Pictures/screenshot-$(date +%F-%H%M%S).png | xclip -selection clipboard -t image/png"
