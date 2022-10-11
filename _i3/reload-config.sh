@@ -20,7 +20,7 @@ echo "set \$font ${I3_FONT}" >> "$I3_CONFIG_FILE"
 echo "set \$dmenu ${I3_DMENU_CMD}" >> "$I3_CONFIG_FILE"
 echo "set \$screenshooter_full ${I3_SCREENSHOOTER_FULL_CMD}" >> "$I3_CONFIG_FILE"
 echo "set \$screenshooter_select ${I3_SCREENSHOOTER_SELECT_CMD}" >> "$I3_CONFIG_FILE"
-$CAT_LOCATION "$HOME/.i3/config.base" "$HOME/.i3-env/config" 2>/dev/null >> "$I3_CONFIG_FILE"
+$CAT_LOCATION "$HOME/.i3/config.base1" "$HOME/.i3-env/bar.config" "$HOME/.i3/config.base2" "$HOME/.i3-env/config" 2>/dev/null >> "$I3_CONFIG_FILE"
 
 echo "done."
 

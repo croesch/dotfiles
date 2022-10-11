@@ -1,0 +1,2 @@
+  status_command i3status | ~/.i3/i3status-wrapper.py
+}
