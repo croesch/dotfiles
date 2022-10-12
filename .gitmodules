@@ -1,9 +1,9 @@
 [submodule "_vim/bundle/vim-vinegar"]
 	path = _vim/bundle/vim-vinegar
-	url = git://github.com/tpope/vim-vinegar.git
+	url = https://github.com/tpope/vim-vinegar.git
 [submodule "_vim/bundle/nerdtree"]
 	path = _vim/bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "_vim/bundle/pinnacle"]
 	path = _vim/bundle/pinnacle
 	url = https://github.com/wincent/pinnacle.git
